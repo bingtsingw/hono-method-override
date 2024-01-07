@@ -31,6 +31,7 @@
     "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
     "mrm": "mrm --preset=@bingtsingw/mrm-preset",
     "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
+    "release": "release-it",
     "test": "bun test",
     "test:dev": "bun test --watch"
   },
@@ -86,6 +87,7 @@
     "@bingtsingw/mrm-preset": "^0.10.0",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
+    "@release-it/conventional-changelog": "^8.0.1",
     "@types/bun": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^6.18.0",
     "@typescript-eslint/parser": "^6.18.0",
@@ -100,6 +102,7 @@
     "prettier": "^3.1.1",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-packagejson": "^2.4.9",
+    "release-it": "^17.0.1",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },

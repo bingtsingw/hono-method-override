@@ -1,0 +1,122 @@
+{
+  "name": "hono-method-override",
+  "version": "0.0.1",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bingtsingw/hono-method-override"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "bingtsingw",
+    "email": "bingtsingw@gmail.com",
+    "url": "https://github.com/bingtsingw"
+  },
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "types": "./src/index.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "commit": "cz",
+    "dev": "tsup --watch",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
+    "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
+    "mrm": "mrm --preset=@bingtsingw/mrm-preset",
+    "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
+    "test": "bun test",
+    "test:dev": "bun test --watch"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,html,css,md,json}": "prettier --check",
+    "**/*.{js,jsx,ts,tsx}": "eslint"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-packagejson",
+      "prettier-plugin-organize-imports"
+    ],
+    "printWidth": 120,
+    "proseWrap": "never",
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": [
+      "alloy",
+      "alloy/typescript"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "*.config.js"
+        ],
+        "rules": {
+          "@typescript-eslint/no-require-imports": "off",
+          "import/no-commonjs": "off"
+        }
+      }
+    ]
+  },
+  "eslintIgnore": [
+    "dist",
+    "build",
+    "out"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/eslint-parser": "^7.23.3",
+    "@bingtsingw/mrm-preset": "^0.10.0",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@types/bun": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-alloy": "^5.1.2",
+    "hono": "^3.12.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "mrm": "^4.1.22",
+    "prettier": "^3.1.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.9",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "treeshake": true,
+    "clean": true,
+    "minify": true
+  }
+}

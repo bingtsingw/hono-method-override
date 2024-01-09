@@ -1,9 +1,6 @@
 # hono-method-override
 
-[![npm version][npm-version-src]][npm-version-href]  
-[![npm downloads][npm-downloads-src]][npm-downloads-href]  
-[![bundle][bundle-src]][bundle-href]  
-[![License][license-src]][license-href]
+[![npm version][npm-version-src]][npm-version-href] [![npm downloads][npm-downloads-src]][npm-downloads-href] [![bundle][bundle-src]][bundle-href] [![License][license-src]][license-href]
 
 A [Hono](https://hono.dev/) plugin to let you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
 

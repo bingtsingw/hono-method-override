@@ -175,5 +175,15 @@ describe('methodOverride', () => {
         _getter: ['x-3', 'x-2', 'x-1', '_method2', '_method1'],
       }),
     ).toEqual('DELETE');
+
+    expect(
+      await testOverrideRequest('POST', {
+        query: '_method=  ,  ',
+        headers: {
+          'x-1': '  ,  ',
+        },
+        _getter: ['x-1', '_method'],
+      }),
+    ).toEqual('POST');
   });
 });

@@ -36,8 +36,4 @@ jobs:
       - run: pnpm install
       - run: pnpm run format
       - run: pnpm run lint:js
-      - uses: codecov/codecov-action@v3
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        with:
-          flags: bun
+      - bun: pnpm run test

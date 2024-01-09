@@ -1,5 +1,7 @@
 
 
+## [0.1.3](https://github.com/bingtsingw/hono-method-override/compare/0.1.2...0.1.3) (2024-01-09)
+
 ## [0.1.2](https://github.com/bingtsingw/hono-method-override/compare/0.1.1...0.1.2) (2024-01-09)
 
 

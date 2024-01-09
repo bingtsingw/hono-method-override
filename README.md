@@ -99,3 +99,14 @@ export default {
 ### more examples
 
 You can find more usages and examples in [test]('./src/method-override.spec.ts'), this project is 100% tested.
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/hono-method-override
+[npm-version-href]: https://npmjs.com/package/hono-method-override
+[npm-downloads-src]: https://img.shields.io/npm/dm/hono-method-override
+[npm-downloads-href]: https://npmjs.com/package/hono-method-override
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/hono-method-override
+[bundle-href]: https://bundlephobia.com/result?p=hono-method-override
+[license-src]: https://img.shields.io/github/license/bingtsingw/hono-method-override.svg
+[license-href]: https://github.com/bingtsingw/hono-method-override/blob/main/LICENSE

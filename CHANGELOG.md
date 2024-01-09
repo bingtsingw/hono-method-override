@@ -1,5 +1,12 @@
 
 
+## [0.1.2](https://github.com/bingtsingw/hono-method-override/compare/0.1.1...0.1.2) (2024-01-09)
+
+
+### Documentation
+
+* pretty ([c912551](https://github.com/bingtsingw/hono-method-override/commit/c9125517b54ea2ba88696d2a2d97e318493e9135))
+
 ## [0.1.1](https://github.com/bingtsingw/hono-method-override/compare/0.1.0...0.1.1) (2024-01-09)
 
 

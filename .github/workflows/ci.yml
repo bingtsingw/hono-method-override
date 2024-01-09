@@ -36,4 +36,4 @@ jobs:
       - run: pnpm install
       - run: pnpm run format
       - run: pnpm run lint:js
-      - bun: pnpm run test
+      - run: pnpm run test

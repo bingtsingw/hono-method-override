@@ -1,7 +1,11 @@
 {
   "name": "hono-method-override",
   "version": "0.1.0",
-  "keywords": [],
+  "keywords": [
+    "hono",
+    "bun",
+    "typescript"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bingtsingw/hono-method-override"

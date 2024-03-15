@@ -37,10 +37,11 @@
     "lint:js": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
     "lint:js:fix": "eslint . --cache --ext .js,.jsx,.ts,.tsx --fix",
     "mrm": "mrm --preset=@bingtsingw/mrm-preset",
-    "prepare": "if [ -d './node_modules/husky' ]; then husky install; fi",
+    "prepare": "if [ -d './node_modules/husky' ]; then husky; fi",
     "release": "release-it",
     "test": "bun test",
-    "test:dev": "bun test --watch"
+    "test:dev": "bun test --watch",
+    "typecheck": "tsc --noEmit"
   },
   "commitlint": {
     "extends": [

@@ -16,7 +16,7 @@ describe('methodOverride', () => {
     .all('/', (c) => c.text('/'));
 
   const testRequest = async (method: METHOD): Promise<METHOD> => {
-    const res = await app.fetch(new Request({ url: 'http://localhost/', method }));
+    const res = await app.fetch(new Request('http://localhost/', { method }));
 
     return res.headers.get('X-Got-Method') as METHOD;
   };
@@ -33,10 +33,7 @@ describe('methodOverride', () => {
       headers?: Record<string, string>;
     },
   ): Promise<METHOD> => {
-    const res = await methodOverride(
-      app.fetch,
-      _getter,
-    )(new Request({ url: `http://localhost?${query}`, method, headers }));
+    const res = await methodOverride(app.fetch, _getter)(new Request(`http://localhost?${query}`, { method, headers }));
 
     return res.headers.get('X-Got-Method') as METHOD;
   };

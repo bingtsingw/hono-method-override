@@ -56,65 +56,29 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-packagejson",
-      "prettier-plugin-organize-imports"
-    ],
-    "printWidth": 120,
-    "proseWrap": "never",
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
+  "prettier": "@xstools-dev/prettier-config/base",
   "eslintConfig": {
-    "extends": [
-      "alloy",
-      "alloy/typescript"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "*.config.js"
-        ],
-        "rules": {
-          "@typescript-eslint/no-require-imports": "off",
-          "import/no-commonjs": "off"
-        }
-      }
-    ]
+    "extends": "@xstools-dev/eslint-config/base"
   },
-  "eslintIgnore": [
-    "dist",
-    "build",
-    "out"
-  ],
   "dependencies": {
     "ufo": "^1.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.7",
-    "@babel/eslint-parser": "^7.23.3",
-    "@bingtsingw/mrm-preset": "^0.10.0",
-    "@commitlint/cli": "^18.4.4",
-    "@commitlint/config-conventional": "^18.4.4",
+    "@bingtsingw/mrm-preset": "^0.11.1",
+    "@commitlint/cli": "^19.2.0",
+    "@commitlint/config-conventional": "^19.1.0",
     "@release-it/conventional-changelog": "^8.0.1",
-    "@types/bun": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.18.0",
-    "@typescript-eslint/parser": "^6.18.0",
+    "@types/bun": "^1.0.8",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.56.0",
-    "eslint-config-alloy": "^5.1.2",
     "hono": "^3.12.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "mrm": "^4.1.22",
-    "prettier": "^3.1.1",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier-plugin-packagejson": "^2.4.9",
-    "release-it": "^17.0.1",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
+    "release-it": "^17.1.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2",
+    "xstools-dev": "^0.0.4"
   },
   "publishConfig": {
     "access": "public",

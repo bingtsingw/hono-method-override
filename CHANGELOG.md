@@ -1,5 +1,22 @@
 
 
+## [0.2.0](https://github.com/bingtsingw/hono-method-override/compare/0.1.3...0.2.0) (2024-03-15)
+
+
+### Features
+
+* upgrade hono support to v4 ([430f354](https://github.com/bingtsingw/hono-method-override/commit/430f35420d7af7a593f76559bddb3f640f762cd3))
+
+
+### Continuous Integration
+
+* add typecheck ([4c7a23e](https://github.com/bingtsingw/hono-method-override/commit/4c7a23ef716a7404665e991db3e1c5c5f0f06ece))
+
+
+### Chores
+
+* upgrade dev tools ([4a8fdd5](https://github.com/bingtsingw/hono-method-override/commit/4a8fdd516c02d2d206386bc716243765af777c56))
+
 ## [0.1.3](https://github.com/bingtsingw/hono-method-override/compare/0.1.2...0.1.3) (2024-01-09)
 
 ## [0.1.2](https://github.com/bingtsingw/hono-method-override/compare/0.1.1...0.1.2) (2024-01-09)

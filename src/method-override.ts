@@ -44,7 +44,8 @@ const replaceRequest = (getters: string[], request: Request): Request => {
   }
 
   if (method !== request.method) {
-    return new Request(request, { method: method.toLowerCase() });
+    Object.defineProperty(request, 'method', { value: method.toUpperCase() });
+    return request;
   }
 
   return request;

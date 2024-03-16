@@ -1,5 +1,17 @@
 
 
+## [0.2.1](https://github.com/bingtsingw/hono-method-override/compare/0.2.0...0.2.1) (2024-03-16)
+
+
+### Bug Fixes
+
+* use Object.defineProperty to alter Request property instead of new Request ([621c55c](https://github.com/bingtsingw/hono-method-override/commit/621c55c948feba57de8be3e0eecfe5626475c95c))
+
+
+### Chores
+
+* **deps:** update actions/cache action to v4 ([a739cec](https://github.com/bingtsingw/hono-method-override/commit/a739cec8753df009e47133afdd44385bb3f809d0))
+
 ## [0.2.0](https://github.com/bingtsingw/hono-method-override/compare/0.1.3...0.2.0) (2024-03-15)
 
 

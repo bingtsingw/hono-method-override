@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   ufo:
-    specifier: ^1.4.0
-    version: 1.4.0
+    specifier: ^1.5.3
+    version: 1.5.3
 
 devDependencies:
   '@bingtsingw/mrm-preset':
@@ -7079,8 +7079,8 @@ packages:
     hasBin: true
     dev: true
 
-  /ufo@1.4.0:
-    resolution: {integrity: sha512-Hhy+BhRBleFjpJ2vchUNN40qgkh0366FWJGqVLYBHev0vpHTrXSA0ryT+74UiW6KWsldNurQMKGqCm1M2zBciQ==}
+  /ufo@1.5.3:
+    resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
     dev: false
 
   /uglify-js@3.17.4:

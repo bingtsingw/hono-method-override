@@ -62,7 +62,7 @@
     "extends": "@xstools-dev/eslint-config/base"
   },
   "dependencies": {
-    "ufo": "^1.4.0"
+    "ufo": "^1.5.4"
   },
   "devDependencies": {
     "@bingtsingw/mrm-preset": "^0.11.1",

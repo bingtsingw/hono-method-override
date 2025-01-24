@@ -76,7 +76,7 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "mrm": "^4.1.22",
-    "release-it": "^17.1.1",
+    "release-it": "^18.1.2",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2",
     "xstools-dev": "^0.0.4"
